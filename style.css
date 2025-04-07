@@ -1,3 +1,39 @@
 body {
-    background-color: rgb(74, 74, 74);
+    font-family: "Poppins", sans-serif;
+    font-weight: 2rem;
+    font-style: normal;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.main-bg {
+    background-image: url('/midias/background/Wave\ Line.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.intro-content {
+    position: relative;
+        display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+.intro-right {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.intro-right img {
+    max-width: 100%;
+    height: auto;
 }
