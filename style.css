@@ -1,38 +1,111 @@
+:root {
+    --primary-color: #0A1128;
+    --white-color: #FFFFFF;
+    --light-gray-color: #EEEEEE;
+    --gray-color: #adaaaa;
+    --secondary-color: crimson;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 61.5%;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 2rem;
+    font-weight: 400;
     font-style: normal;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 4.5rem;
+}
+
+h4 {
+    font-size: 4.0rem;
+}
+
+h5 {
+    font-size: 3.5rem;
+}
+
+h6 {
+    font-size: 3.0rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-bg {
+    background-image: url("/midias/background/Wave\ Line.svg");
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg {
+    background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content {
-    max-width: 120rem;
+    max-width: 140rem;
     margin: 0 auto;
     padding: 8rem var(--gap);
+    margin-left: 1rem;
 }
 
 .section {
     min-height: 100vh;
 }
 
-.main-bg {
-    background-image: url('/midias/background/Wave\ Line.svg');
-    background-size: cover;
-    background-position: center center;
-    color: var(--white-color);
+.menu-spacing {
+    height: 65px;
 }
 
 .intro-content {
     position: relative;
-        display: grid;
+    /*top: -8rem;*/
+    display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     min-height: 100vh;
 }
+
+.intro-left,
 .intro-right {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
+
 .intro-right img {
     max-width: 100%;
     height: auto;

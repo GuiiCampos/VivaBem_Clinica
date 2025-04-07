@@ -6,27 +6,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="midias/plano-de-saude.png" type="image/x-icon">
+    <link rel="shortcut icon" href="midias/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
     <title>VivaBem</title>
 </head>
+
 <body>
-    
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            
+            <h1 onclick="getElementById('close-menu').checked = false"> <a href="#home">Home</a></h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false">
+                    <li> <a href="#serviços">Serviços</a></li>
+                    <li> <a href="#equipe">Nossa-Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
 
     <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-left">
                 <h1>VivaBem Clínica</h1>
-                <h2>Cuidado da sua saúde com carinho e cuidado</h2>    
+                <h2>Cuidando da sua saúde com carinho e cuidado</h2>    
             </div>
     
             <div class="intro-right">
                 <img src="midias/complementares/undraw_medicine_hqqg.svg" alt="hackmen">
             </div>  
         </div>
-    </section>   
-    
-    
+    </section>
 </body>
 </html>
