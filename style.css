@@ -77,8 +77,12 @@ a {
     color: var(--white-color);
 }
 
-.white-bg {
+.gray-bg {
     background: var(--light-gray-color);
+    color: var(--primary-color);
+}
+.white-bg {
+    background: var(--white-color);
     color: var(--primary-color);
 }
 
@@ -126,6 +130,7 @@ a {
 }
 
 .servico {
+    margin-top: 4rem;
     flex: 1;
     min-width: 250px;
     text-align: center;
@@ -136,4 +141,25 @@ a {
     max-width: 100%;
     height: auto;
     border-radius: 1.2rem;
+}
+
+.equipe-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.membro {
+    flex: 1;
+    min-width: 250px;
+    padding: 2rem;
+}
+
+.membro img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
