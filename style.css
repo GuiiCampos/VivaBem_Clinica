@@ -78,7 +78,7 @@ a {
 }
 
 .white-bg {
-    background: var(--white-color);
+    background: var(--light-gray-color);
     color: var(--primary-color);
 }
 
@@ -93,6 +93,7 @@ a {
 }
 
 .menu-spacing {
+    background-color: var(--light-gray-color);
     height: 65px;
 }
 

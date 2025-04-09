@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #0A1128;
+    --white-color: #FFFFFF;
+    --light-gray-color: #EEEEEE;
+    --gray-color: #adaaaa;
+    --secondary-color: crimson;
+    --gap: 3rem;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -5,7 +14,7 @@
     right: 0;
     width: 100%;
     z-index: 1;
-    border-bottom: 0.1rem solid var(--light-gray-color);
+    border-bottom: 0.1rem solid var(--white-color);
 }
 
 .menu-content {
