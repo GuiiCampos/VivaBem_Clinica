@@ -116,3 +116,23 @@ a {
     max-width: 100%;
     height: auto;
 }
+
+.servicos-cont {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.servico {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.servico img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+}
