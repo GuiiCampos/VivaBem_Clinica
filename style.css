@@ -14,7 +14,7 @@
 }
 
 html {
-    font-size: 61.5%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -24,6 +24,11 @@ body {
     font-style: normal;
     color: var(--primary-color);
     line-height: 1.6;
+}
+
+#Titulo {
+    font-size: 7.4rem;
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -61,10 +66,12 @@ p {
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
 }
 
 .main-bg {
-    background-image: url("/midias/background/Wave\ Line.svg");
+    background-image: url('midias/background/dragon-scales.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -79,7 +86,6 @@ a {
     max-width: 140rem;
     margin: 0 auto;
     padding: 8rem var(--gap);
-    margin-left: 1rem;
 }
 
 .section {
