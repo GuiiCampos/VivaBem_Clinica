@@ -1,4 +1,7 @@
-:root {
+/* ======================
+   VARIÁVEIS E RESET
+   ====================== */
+   :root {
     --primary-color: #0A1128;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEEE;
@@ -13,6 +16,9 @@
     box-sizing: border-box;
 }
 
+/* ======================
+   CONFIGURAÇÕES GLOBAIS
+   ====================== */
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -26,43 +32,22 @@ body {
     line-height: 1.6;
 }
 
+/* ======================
+   TIPOGRAFIA
+   ====================== */
 #Titulo {
     font-size: 7.4rem;
     margin-bottom: 2rem;
 }
 
-h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
+h1 { font-size: 6rem; text-transform: uppercase; line-height: 1.2; }
+h2 { font-size: 5rem; margin-bottom: 3rem; line-height: 1.4; text-transform: uppercase; }
+h3 { font-size: 4.5rem; }
+h4 { font-size: 4.0rem; }
+h5 { font-size: 3.5rem; }
+h6 { font-size: 3.0rem; }
 
-h2 {
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 4.5rem;
-}
-
-h4 {
-    font-size: 4.0rem;
-}
-
-h5 {
-    font-size: 3.5rem;
-}
-
-h6 {
-    font-size: 3.0rem;
-}
-
-p {
-    margin-bottom: 2rem;
-}
+p { margin-bottom: 2rem; }
 
 a {
     text-decoration: none;
@@ -70,6 +55,9 @@ a {
     transition: color 0.3s ease;
 }
 
+/* ======================
+   BACKGROUNDS
+   ====================== */
 .main-bg {
     background-image: url('../midias/background/dragon-scales.svg');
     background-size: cover;
@@ -77,15 +65,71 @@ a {
     color: var(--white-color);
 }
 
-.gray-bg {
-    background: var(--light-gray-color);
-    color: var(--primary-color);
+.gray-bg { background: var(--light-gray-color); color: var(--primary-color); }
+.white-bg { background: var(--white-color); color: var(--primary-color); }
+
+/* ======================
+   COMPONENTES DO MENU
+   ====================== */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--light-gray-color);
 }
-.white-bg {
-    background: var(--white-color);
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
     color: var(--primary-color);
 }
 
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+/* ======================
+   LAYOUT
+   ====================== */
 .main-content {
     max-width: 140rem;
     margin: 0 auto;
@@ -101,9 +145,12 @@ a {
     height: 65px;
 }
 
+/* ======================
+   COMPONENTES
+   ====================== */
+/* Intro Section */
 .intro-content {
     position: relative;
-    /*top: -8rem;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -122,6 +169,7 @@ a {
     height: auto;
 }
 
+/* Serviços */
 .servicos-cont {
     display: flex;
     justify-content: space-between;
@@ -155,6 +203,7 @@ a {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Equipe */
 .equipe-container {
     display: flex;
     justify-content: space-between;
@@ -170,7 +219,7 @@ a {
     font-size: 2rem;
 }
 
-.membro img{
+.membro img {
     width: 240px;
     height: 240px;
     object-fit: cover;
