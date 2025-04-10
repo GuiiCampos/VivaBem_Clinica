@@ -15,12 +15,13 @@
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             
-            <h1 onclick="getElementById('close-menu').checked = false"> <a href="#home">Home</a></h1>
+            <h1> <a href="#home">Home</a></h1>
 
             <nav>
-                <ul onclick="getElementById('close-menu').checked = false">
+                <ul>
                     <li> <a href="#serviços">Serviços</a></li>
                     <li> <a href="#equipe">Nossa-Equipe</a></li>
+                    <li> <a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +35,7 @@
             </div>
     
             <div class="intro-right">
-                <img src="midias/complementares/undraw_medicine_hqqg.svg" alt="hackmen">
+                <img src="midias/complementares/undraw_medicine_hqqg.svg" alt="dois médicos cartoon">
             </div>  
         </div>
     </section>
@@ -94,6 +95,27 @@
           </div>
         </div>
       </section>
-   
+
+      <section id="contato" class="section main-bg">
+        <div class="main-content">
+            <h2>Entre em contato</h2>
+            <form class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+    
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade">
+    
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado">
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>    
+      
 </body>
 </html>

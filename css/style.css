@@ -69,9 +69,26 @@ a {
 .white-bg { background: var(--white-color); color: var(--primary-color); }
 
 /* ======================
+   LAYOUT
+   ====================== */
+.main-content {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    background-color: var(--light-gray-color);
+    height: 65px;
+}
+/* ======================
    COMPONENTES DO MENU
    ====================== */
-.menu {
+   .menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -125,24 +142,6 @@ a {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
-}
-
-/* ======================
-   LAYOUT
-   ====================== */
-.main-content {
-    max-width: 140rem;
-    margin: 0 auto;
-    padding: 8rem var(--gap);
-}
-
-.section {
-    min-height: 100vh;
-}
-
-.menu-spacing {
-    background-color: var(--light-gray-color);
-    height: 65px;
 }
 
 /* ======================
@@ -232,4 +231,44 @@ a {
 .membro img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+
+.formulario input {
+    padding: 1rem;
+    border: 2px solid var(--gray-color);
+    border-radius: 0.7rem;
+    font-size: 1.6rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.formulario input:focus {
+    border-color: var(--primary-color);
+}
+
+.formulario button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: var(--secondary-color);
 }
