@@ -71,7 +71,7 @@ a {
 }
 
 .main-bg {
-    background-image: url('midias/background/dragon-scales.svg');
+    background-image: url('../midias/background/dragon-scales.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
