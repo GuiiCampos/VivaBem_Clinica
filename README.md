@@ -21,5 +21,7 @@ Projeto desenvolvido como parte de um exercício de front-end. Esta é uma landi
 Este site não possui backend real. O formulário é apenas demonstrativo. Todos os dados são fictícios.
 
 ---
+Link do site:
+vivabemn.netlify.app
 
 Feito com 💙 por Guilherme Campos
