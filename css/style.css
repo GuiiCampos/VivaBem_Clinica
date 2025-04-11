@@ -72,7 +72,7 @@ a {
    LAYOUT
    ====================== */
 .main-content {
-    max-width: 140rem;
+    max-width: 130rem;
     margin: 0 auto;
     padding: 8rem var(--gap);
 }
@@ -275,6 +275,69 @@ a {
 
 .close-menu {
     display: none;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-bottom: 2.2rem;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1.4rem;
+    font-size: 2rem;
+
+}
+
+.form-group input {
+    border: none;
+    border-radius: 1.3rem;
+    background-color: var(--light-gray-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+body .full-wid {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border-radius: 0.8rem;
+    border: 0.3rem solid var(--gray-color);
+    background: none;
+    color: var(--gray-color);
+    padding: 1.3rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--gray-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: var(--gray-color);
 }
 
 @media (max-width: 800px) {
