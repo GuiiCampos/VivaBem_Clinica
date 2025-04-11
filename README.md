@@ -1,4 +1,4 @@
-# VivaBem Clínica 🏥
+# VivaBem 🏥
 
 Projeto desenvolvido como parte de um exercício de front-end. Esta é uma landing page fictícia de uma clínica, com design responsivo e foco em experiência do usuário.
 
