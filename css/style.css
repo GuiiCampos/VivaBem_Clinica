@@ -236,10 +236,6 @@ a {
 }
 
 /* Formulario */
-.close-menu {
-    display: none;
-}
-
 .contact-form {
     grid-column: span 2;
 }
@@ -304,10 +300,33 @@ body .full-wid {
     transform: scale(1.05);
 }
 
+/* Rodapé */
+
+.footer {
+    background-color: #e1e1e1;
+    color: #0a0808;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.6rem;
+    margin-top: 0rem;
+  }
+  
+  .footer-content p {
+    margin: 0.5rem 0;
+  }
+
+/* Menu mobile */
+.close-menu {
+    display: none;
+}
+
 .back-to-top {
     display: none;
 }
 
+/* ======================
+   AJUSTES RESPONSIVOS
+   ====================== */
 @media (max-width: 800px) {
     .menu-spacing {
         display: none;
