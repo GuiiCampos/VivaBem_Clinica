@@ -340,6 +340,10 @@ body .full-wid {
     color: var(--gray-color);
 }
 
+.back-to-top {
+    display: none;
+}
+
 @media (max-width: 800px) {
     .menu-spacing {
         display: none;
@@ -387,5 +391,27 @@ body .full-wid {
     }
     .close-menu:checked~.close-menu-label::after {
         content: '⛌';
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 3.2rem;
+        right: 3.3rem;
+        background: var(--light-gray-color);
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        transform: rotate(-90deg);
+        border: 0.1rem solid var(--primary-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .back-to-top:hover {
+        transform: rotate(-90deg) scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 }
