@@ -12,13 +12,16 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             
-            <h1> <a href="#home">Home</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false"> <a href="#home">Home</a></h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li> <a href="#serviços">Serviços</a></li>
                     <li> <a href="#equipe">Nossa-Equipe</a></li>
                     <li> <a href="#contato">Contato</a></li>
@@ -26,6 +29,8 @@
             </nav>
         </div>
     </aside>
+
+    <div class="menu-spacing"></div>
 
     <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
